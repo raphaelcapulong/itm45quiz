@@ -1,0 +1,8 @@
+{% include "header.html" %}
+        <h1>Branches</h1>
+        <ul>
+            {% for branch in branch_list %}
+                <li>{{ branch.name }} - {{ branch.phonenumber }}</li>
+            {% endfor %}
+            </ul>
+{% include "footer.html" %}
